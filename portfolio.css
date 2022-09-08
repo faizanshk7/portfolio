@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+*::selection {
+  color: #333;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+body {
+  background: white;
+  overflow-x: hidden;
+  padding-right: 35rem;
+}
+
+section {
+  min-height: 100vh;
+  padding: 1rem;
+}
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 20%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+header .navbar {
+  width: 100%;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 1rem 3rem;
+}
+
+header .navbar ul li a {
+  display: block;
+  padding: 2rem;
+  background-color: black;
+  color: rgb(0 88 255);
+  font-size: 3rem;
+  border-radius: 5rem;
+}
+
+header .navbar ul li a:hover {
+  background: rgb(57, 57, 57);
+  color: rgb(255, 255, 255);
+}
+
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+  align-items: center;
+}
+.home img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.home h1 {
+  font-size: 5rem;
+  color: black;
+}
+
+span {
+  color: rgb(0 88 255);
+}
+
+.home p {
+  font-size: 2rem;
+  color: black;
+  padding: 1rem 0;
+}
+
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: black;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.wrapper .button a {
+  color: white;
+}
+.wrapper .button .icon {
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 60px;
+}
+.wrapper .button .icon a i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover {
+  background-color: rgb(103, 103, 103);
+}
+/* .wrapper .button a:hover {
+  color: black;
+} */
+.home img {
+  box-shadow: -5px -5px 4px 4px rgb(0 88 255);
+}
+.home .resume {
+  padding: 1.2rem;
+  background-color: black;
+  color: rgb(0 88 255);
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+  width: fit-content;
+}
+.home .resume:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.heading {
+  font-size: 4rem;
+  color: black;
+  margin-top: 2rem;
+}
+.about .info h3 {
+  margin: 2rem 4rem 2rem 4rem;
+  font-size: 2.5rem;
+  color: black;
+  padding: 2rem;
+  font-weight: normal;
+  text-align: center;
+}
+.about .row .counter {
+  flex: 1 1 48rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .counter .box {
+  width: 20rem;
+  background: lightgrey;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+.about .counter .box:hover {
+  background: rgb(255, 255, 255);
+}
+
+.about .counter .box h3 {
+  font-size: 2rem;
+  color: rgb(0 88 255);
+}
+.about .counter .box span {
+  font-size: 3rem;
+}
+.skills .heading {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  color: black;
+}
+.skills .row .skill_data {
+  position: relative;
+  display: flex;
+  margin: 2rem;
+  font-size: 5rem;
+  width: 60%;
+  padding: 1rem 7rem 1rem 1rem;
+}
+.skill_name {
+  color: black;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+.skill_num {
+  color: black;
+  font-size: 1.2rem;
+}
+.skill_bar {
+  position: absolute;
+  bottom: 0.4rem;
+  height: 0.6rem;
+  background-color: rgb(0, 0, 0);
+}
+.html {
+  width: 98%;
+}
+.css {
+  width: 90%;
+}
+.javascript {
+  width: 60%;
+}
+.bootstrap {
+  width: 80%;
+}
+.java {
+  width: 65%;
+}
+.sql {
+  width: 80%;
+}
+.contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact .heading {
+  text-align: center;
+  margin-top: 4rem;
+}
+.contact .row .info {
+  color: black;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.contact .row .info h3 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: black;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+.contact .row form {
+  flex: 2 2 40rem;
+  padding: 1rem;
+  margin: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.contact .row form h2 {
+  color: black;
+  font-size: 1.7rem;
+}
+
+.contact .row form .box {
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: lightgrey;
+  color: white;
+  text-transform: none;
+  font-size: 1.5rem;
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+}
+
+.contact .row form .message {
+  height: 10rem;
+  resize: none;
+  background-color: lightgrey;
+  color: white;
+  width: 80%;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 0.5rem;
+  background-color: rgb(178, 82, 229);
+  color: black;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  width: 25%;
+  border-radius: 5rem;
+}
+.contact .btn:hover {
+  background-color: black;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    left: -120%;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    width: 100vw;
+  }
+
+  .heading {
+    margin: 0 3rem;
+  }
+
+  .about .row .box {
+    width: 100%;
+  }
+  .contact .row form {
+    margin: 3rem 0;
+  }
+}
